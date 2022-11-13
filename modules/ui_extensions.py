@@ -17,7 +17,7 @@ available_extensions = {"extensions": []}
 
 
 def check_access():
-    assert not shared.cmd_opts.disable_extension_access, "extension access disabed because of commandline flags"
+    assert not shared.cmd_opts.disable_extension_access, "Extension updates are disabled when the UI is remotely accessible. Restart without the --listen or --share command line options and try again."
 
 
 def apply_and_restart(disable_list, update_list):
